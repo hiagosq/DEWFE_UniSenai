@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    color: #444;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #B20D15;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #fff7f7;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 20px 40px;
+    border-bottom: 1px solid #eee;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    color: #B20D15;
+}
+
+.container-sobre {
+    display: flex;
+    padding: 80px 40px;
+    align-items: flex-start;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.foto-perfil img {
+    width: 320px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 20px 20px 0px #b20d15;
+}
+
+.conteudo-texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-sobre h2, .formacao h2, .texto-futuro h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto-sobre p, .formacao li, .texto-futuro p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.formacao ul {
+    list-style-position: inside;
+    list-style-type: square;
+}
+
+.formacao h4 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.texto-futuro {
+    width: 100%; 
+    margin-top: 20px;
+}
+
+.texto-futuro p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #F2EFE9;
+    padding: 40px 20px;
+    border-top: 1px solid #eee;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-social img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.footer-social img:hover {
+    transform: translateY(-5px);
+    filter: grayscale(0%);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0ddd7;
+}
