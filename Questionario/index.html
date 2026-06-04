@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Questionário</h1>
+    <form action="submit.php" method="post">
+
+        <div id="toggleInvalido" class="hidden"></div>
+        <label for="passwordLabel">Senha:</label><br>
+        <input type="password" id="passwordInput" name="password" required>
+        <button type="button" id="toggleSenha">Mostrar Senha</button><br><br>
+
+        <label for="checkbox">Sou estudante:</label><br>
+        <input type="checkbox" id="checkbox" name="checkbox"><br><br>
+
+        <div id="estudanteDados" class="hidden">
+            <label for="curso">Curso:</label><br>
+            <input type="text" id="curso" name="curso"><br><br>
+
+            <label for="instituicao">Instituição de ensino:</label><br>
+            <input type="text" id="instituicao" name="instituicao"><br><br>
+
+            <label for="periodo">Período:</label><br>
+            <input type="date" id="periodo" name="periodo">a
+            <input type="date" id="periodo" name="periodo"><br><br>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
