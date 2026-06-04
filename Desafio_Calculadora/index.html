@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator">
+
+    <div class="display">
+      <input type="text" id="display" disabled value="0">
+    </div>
+
+    <div class="buttons">
+
+      <button onclick="adicionarNumero('7')" class="btn" data-value="7">7</button>
+      <button onclick="adicionarNumero('8')" class="btn" data-value="8">8</button>
+      <button onclick="adicionarNumero('9')" class="btn" data-value="9">9</button>
+      <button onclick="adicionarOperacao('/')" class="btn operator" id="div">÷</button>
+
+      <button onclick="adicionarNumero('4')" class="btn" data-value="4">4</button>
+      <button onclick="adicionarNumero('5')" class="btn" data-value="5">5</button>
+      <button onclick="adicionarNumero('6')" class="btn" data-value="6">6</button>
+      <button onclick="adicionarOperacao('*')" class="btn operator" id="mult">×</button>
+
+      <button onclick="adicionarNumero('1')" class="btn" data-value="1">1</button>
+      <button onclick="adicionarNumero('2')" class="btn" data-value="2">2</button>
+      <button onclick="adicionarNumero('3')" class="btn" data-value="3">3</button>
+      <button onclick="adicionarOperacao('-')" class="btn operator" id="sub">−</button>
+
+      <button onclick="adicionarNumero('0')" class="btn" data-value="0">0</button>
+      <button onclick="adicionarNumero('.')" class="btn" data-value=".">.</button>
+      <button onclick="calcular()" class="btn equals" id="calcular">=</button>
+      <button onclick="adicionarOperacao('+')" class="btn operator" id="add">+</button>
+
+      <button onclick="limpar()" class="btn clear" id="limpar">C</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
